@@ -1,11 +1,11 @@
 //=========================================================================
 // Name & Email must be EXACTLY as in Gradescope roster!
-// Name: 
-// Email: 
+// Name: Nathan Herrera
+// Email:nherr044@ucr.edu
 // 
-// Assignment name: 
+// Assignment name: Lab03 
 // Lab section: 
-// TA: 
+// TA: Allan Knight
 // 
 // I hereby certify that I have not received assistance on this assignment,
 // or used code, from ANY outside source other than the instruction team

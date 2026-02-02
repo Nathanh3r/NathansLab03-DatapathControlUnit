@@ -3,7 +3,7 @@
 // Name: Nathan Herrera
 // Email: nherr044@ucr.edu
 // 
-// Assignment name: Lab 02 ALU
+// Assignment name: Lab 03 
 // Lab section: 
 // TA: Allan Knight
 // 

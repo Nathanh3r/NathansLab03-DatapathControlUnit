@@ -3,9 +3,9 @@
 // Name: Nathan Herrera
 // Email: nherr044@ucr.edu
 // 
-// Assignment name: Lab02 ALU
+// Assignment name: Lab3
 // Lab section: 
-// TA: Allan KNight
+// TA: Allan Knight
 // 
 // I hereby certify that I have not received assistance on this assignment,
 // or used code, from ANY outside source other than the instruction team

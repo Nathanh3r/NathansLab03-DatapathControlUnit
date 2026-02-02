@@ -5,7 +5,7 @@
 // 
 // Assignment name: Lab03 datapath control unit
 // Lab section: 
-// TA: 
+// TA: Allan Knight
 // 
 // I hereby certify that I have not received assistance on this assignment,
 // or used code, from ANY outside source other than the instruction team
