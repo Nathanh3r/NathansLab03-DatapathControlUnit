@@ -144,8 +144,47 @@ module datapath_tb;
         // -------------------------------------------------------
         // Test group 2: ALU Control Unit
         // -------------------------------------------------------
-        $write("\tTest Case 1: R-type (add) ...");
-        test_case(32'h00000024, 32'hFFFFFFFF, 32'h0001, 1'b0, 32'h0001, 1'b1, 1'b0, 1'b0, 1'b0, 2'b10, 1'b0, 1'b0, 1'b1);
+        
+        $write("\tTest Case 1: R-type (and) ...");
+        test_case(32'h00000024, 32'hFFFFFFFF, 32'h00000001, 1'b0, 32'h00000001,
+          1'b1, 1'b0, 1'b0, 1'b0, 2'b10, 1'b0, 1'b0, 1'b1);
+
+        $write("\tTest Case 2: R-type (or) ...");
+
+        test_case(32'h00000025, 32'hFFFFFFFF, 32'h00000001, 1'b0, 32'hFFFFFFFF,
+          1'b1, 1'b0, 1'b0, 1'b0, 2'b10, 1'b0, 1'b0, 1'b1);
+
+        $write("\tTest Case 3: R-type (add) ...");
+        test_case(32'h00000020, 32'hFFFFFFFF, 32'h00000001, 1'b1, 32'h00000000,
+          1'b1, 1'b0, 1'b0, 1'b0, 2'b10, 1'b0, 1'b0, 1'b1);
+
+        $write("\tTest Case 4: R-type (sub) ...");
+        test_case(32'h00000022, 32'hFFFFFFFF, 32'h00000001, 1'b0, 32'hFFFFFFFE,
+          1'b1, 1'b0, 1'b0, 1'b0, 2'b10, 1'b0, 1'b0, 1'b1);
+
+        $write("\tTest Case 5: R-type (slt) ...");
+        test_case(32'h0000002A, 32'hFFFFFFFF, 32'h00000001, 1'b0, 32'h00000001,
+          1'b1, 1'b0, 1'b0, 1'b0, 2'b10, 1'b0, 1'b0, 1'b1);
+
+        $write("\tTest Case 6: R-type (nor) ...");
+        test_case(32'h00000027, 32'hFFFFFFFF, 32'h00000001, 1'b1, 32'h00000000,
+          1'b1, 1'b0, 1'b0, 1'b0, 2'b10, 1'b0, 1'b0, 1'b1);
+
+        $write("\tTest Case 7: addi ...");
+        test_case(32'h20000004, 32'hFFFFFFFB, 32'h00000004, 1'b0, 32'hFFFFFFFF,
+          1'b0, 1'b0, 1'b0, 1'b0, 2'b00, 1'b0, 1'b1, 1'b1);
+
+        $write("\tTest Case 8: lw ...");
+        test_case(32'h8C000020, 32'h000000FF, 32'h00000020, 1'b0, 32'h0000011F,
+          1'b0, 1'b0, 1'b1, 1'b1, 2'b00, 1'b0, 1'b1, 1'b1);
+
+        $write("\tTest Case 9: sw ...");
+        test_case(32'hAC000064, 32'h000000FF, 32'h00000064, 1'b0, 32'h00000163,
+          1'b0, 1'b0, 1'b0, 1'b0, 2'b00, 1'b1, 1'b1, 1'b0);
+
+        $write("\tTest Case 10: beq ...");
+        test_case(32'h10000025, 32'h000000FF, 32'h00000025, 1'b0, 32'h000000DA,
+          1'b0, 1'b1, 1'b0, 1'b0, 2'b01, 1'b0, 1'b0, 1'b0);
 
         // -------------------------------------------------------
         // More ALU Control Unit tests jere
